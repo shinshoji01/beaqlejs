@@ -1,4 +1,6 @@
 <?php	
+    date_default_timezone_set('Asia/Shanghai');
+
     // BeaqleJS web service
     // 
     // Receives a JSON fromatted data structure containing listening test results and writes them to a text file.
@@ -42,10 +44,10 @@
 
             // add a random suffix 
   	        $filenumber = mt_rand();
-            while (file_exists($results_prefix.$filename."_".dechex($filenumber).".txt")) {
+            while (file_exists($results_prefix.$filename."_".dechex($filenumber).".json")) {
                 $filenumber++;
             }
-        	$filename_data = $filename."_".dechex($filenumber).".txt";
+        	$filename_data = $filename."_".dechex($filenumber).".json";
         	
             // write the file
             $succ = file_put_contents($results_prefix.$filename_data, print_r($testresults, TRUE));
