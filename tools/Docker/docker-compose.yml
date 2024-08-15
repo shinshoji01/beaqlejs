@@ -4,6 +4,6 @@ services:
     image: php:7.0-apache
     container_name: beaqlejs-httpd
     ports:
-      - "3000:80"
+      - "3333:80"
     volumes:
-      - ../../:/var/www/html
+      - ../../240815_spaccent/:/var/www/html
