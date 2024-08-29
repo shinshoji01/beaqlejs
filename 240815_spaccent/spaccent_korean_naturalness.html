@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -14,7 +15,12 @@
     <title>BeaqleJS</title>
     
     <!-- load the test config file -->
-        <script src="config/spaccent_hindi_accentedness.js" type="text/javascript"></script>
+<!--         <script src="config/mushra_speech_naturalness.js" type="text/javascript"></script> -->
+        <script src="../240529_TAC/config/mushra_speech_naturalness.js" type="text/javascript"></script>
+<!--         <script src="config/mushra_speech_similarity.js" type="text/javascript"></script> -->
+<!--         <script src="config/bws_utterance_control.js" type="text/javascript"></script> -->
+<!--         <script src="config/bws_word_control.js" type="text/javascript"></script> -->
+<!--         <script src="config/example_config_preference.js" type="text/javascript"></script> -->
     <!---->
     
     <link type="text/css" href="css/smoothness/jquery-ui-1.8.18.custom.css" rel="Stylesheet" />
@@ -33,6 +39,10 @@
             // Uncomment one of the following lines to choose the desired test class
 
             testHandle = new MushraTest(TestConfig);    // <-- MUSHRA test class
+            // testHandle = new MushraSimTest(TestConfig);    // <-- MUSHRA test class
+            //testHandle = new AbxTest(TestConfig);     // <-- ABX test class
+            // testHandle = new PrefTest(TestConfig);    // <-- MUSHRA test class
+            // testHandle = new PrefWordTest(TestConfig);    // <-- MUSHRA test class
 
             $('#Footer').prepend(testHandle.browserFeatureString() + '<br/>');
         };
@@ -63,19 +73,15 @@
         <!-- edit here if you want to change the welcome message  and instructions -->
 
         <div style="text-align:left">
-            Thanks for your interest in participating in the listening test. This survey will roughly take 30 minutes. You will listen to 8 test cases and each case will have 10 audio samples of the same text. Some audio is synthesized while others are read by humans.
+            Thanks for your interest in participating in the listening test. This survey will roughly take 15 minutes. You will listen to 10 test cases and each case will have 6 audio samples of the same text. Some audio is synthesized while others are read by humans.
             <br />
             <br />
-             I put the sample of the test page at the end of this page. Please listen to the audio clips carefully, rate <b>accentedness</b> of the audio samples based on the following instruction:
+             I put the sample of the test page at the end of this page. Please listen to the audio clips carefully, rate <b>naturalness</b> of the audio samples based on the following instruction:
             <ul>
-                <li>This listening test focuses on the Hindi accent.</li>
-                <li>‘Accentedness’ refers to how strongly you can detect a Hindi accent.</li>
-                <li>Give a higher score if the speech sounds accented, and a lower score if it sounds like American English.</li>
+                <li>Naturalness means whether you feel the speech is spoken by a native American English speaker.</li>
                 <li>Ignore the background noise.</li>
                 <li>Ignore the emotion of the speech.</li>
-                <li>If some audio samples have repeated words or missing words, ignore these errors and rate based on the rest of the content.</li>
                 <li>Move the slider to rate each sample.</li>
-                <li>You can refer to the audio samples of Hindi accent below.</li>
             </ul>
             There are some audios for checking your attention through the survey. If a certain number of the scores are rated unreasonably, you will not be paid. So, listen to the audio carefully and do not fill out the survey randomly. Please <b> wear </b> headphones and be in a quiet room.
         </div>
@@ -85,39 +91,13 @@
         <!-- this button starts the first test -->
         <button id="BtnStartTest" onclick="testHandle.startTests();">Start!</button>	
         
-        <!-- Show the samples of accented speeches -->
+<!--         <br />
         <br />
-        <br />
-        Examples of Accented Speech (Hindi)
-        <br />
-        <br />
-        <audio controls preload="auto">
-            <source src="audio/20240815_spaccent/L2-ARCTIC___ASI/arctic_a0024.wav" type="audio/wav">
-            Your browser does not support the audio element.
-        </audio>
-        <audio controls preload="auto">
-            <source src="audio/20240815_spaccent/L2-ARCTIC___TNI/arctic_a0024.wav" type="audio/wav">
-            Your browser does not support the audio element.
-        </audio>
-        <audio controls preload="auto">
-            <source src="audio/20240815_spaccent/L2-ARCTIC___ASI/arctic_a0449.wav" type="audio/wav">
-            Your browser does not support the audio element.
-        </audio>
-        <audio controls preload="auto">
-            <source src="audio/20240815_spaccent/L2-ARCTIC___TNI/arctic_a0449.wav" type="audio/wav">
-            Your browser does not support the audio element.
-        </audio>
-        <audio controls preload="auto">
-            <source src="audio/20240815_spaccent/L2-ARCTIC___ASI/arctic_b0518.wav" type="audio/wav">
-            Your browser does not support the audio element.
-        </audio>
-        <audio controls preload="auto">
-            <source src="audio/20240815_spaccent/L2-ARCTIC___TNI/arctic_b0518.wav" type="audio/wav">
-            Your browser does not support the audio element.
-        </audio>
         
-        <br />
-        <br />
+        <div style="text-align:left">
+            <b> Sample Demo Page: </b>
+        </div>
+        <br /> -->
         
         <!-- is displayed during load -->
 <!--         <div id="demonat">
