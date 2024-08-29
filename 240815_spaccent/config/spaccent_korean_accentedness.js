@@ -1,5 +1,5 @@
 var TestConfig = {
-          "TestName": "Speech Accentedness Evaluation",
+          "TestName": "Speech Accentedness Evaluation (Korean)",
           "RateScalePng": "img/scale_accent.png",
           "RateScaleBgPng": "img/scale_abs_background.png",
           "RateMinValue": 0,
