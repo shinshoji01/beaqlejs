@@ -5,7 +5,7 @@ var TestConfig = {
   "RateMinValue": 0,
   "RateMaxValue": 100,
   "RateDefaultValue":0,
-  "ShowFileIDs": true,
+  "ShowFileIDs": false,
   "ShowResults": false,
   "LoopByDefault": false,
   "EnableABLoop": true,
