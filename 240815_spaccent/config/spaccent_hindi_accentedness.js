@@ -1,11 +1,11 @@
 var TestConfig = {
   "TestName": "Speech Accentedness Evaluation",
-  "RateScalePng": "img/scale_abs.png",
+  "RateScalePng": "img/scale_accent.png",
   "RateScaleBgPng": "img/scale_abs_background.png",
   "RateMinValue": 0,
   "RateMaxValue": 100,
   "RateDefaultValue":0,
-  "ShowFileIDs": false,
+  "ShowFileIDs": true,
   "ShowResults": false,
   "LoopByDefault": false,
   "EnableABLoop": true,
