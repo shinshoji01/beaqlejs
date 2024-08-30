@@ -1,6 +1,6 @@
 var TestConfig = {
           "TestName": "Speech Naturalness Evaluation",
-          "RateScalePng": "img/scale_abs.png",
+          "RateScalePng": "img/scale_natural.png",
           "RateScaleBgPng": "img/scale_abs_background.png",
           "RateMinValue": 0,
           "RateMaxValue": 100,
