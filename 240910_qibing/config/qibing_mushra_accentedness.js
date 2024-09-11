@@ -5,7 +5,7 @@ var TestConfig = {
       "RateMinValue": 0,
       "RateMaxValue": 100,
       "RateDefaultValue":0,
-      "ShowFileIDs": true,
+      "ShowFileIDs": false,
       "ShowResults": false,
       "LoopByDefault": false,
       "EnableABLoop": true,
@@ -13,7 +13,7 @@ var TestConfig = {
       "BeaqleServiceURL": "/web_service/beaqleJS_Service.php",
       "SupervisorContact": "shoinoue@link.cuhk.edu.cn",
       "RandomizeTestOrder": true,
-      "MaxTestsPerRun": 2,
+      "MaxTestsPerRun": 3,
       "RequireMaxRating": false,
       "AudioRoot": "",
       "Testsets":
