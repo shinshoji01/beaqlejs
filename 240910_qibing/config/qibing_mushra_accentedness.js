@@ -13,7 +13,7 @@ var TestConfig = {
       "BeaqleServiceURL": "/web_service/beaqleJS_Service.php",
       "SupervisorContact": "shoinoue@link.cuhk.edu.cn",
       "RandomizeTestOrder": true,
-      "MaxTestsPerRun": 3,
+      "MaxTestsPerRun": 15,
       "RequireMaxRating": false,
       "AudioRoot": "",
       "Testsets":
