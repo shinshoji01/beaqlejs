@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+
+    <!--
+    BeaqleJS - HTML5 and JavaScript framework for listening tests, <https://github.com/HSU-ANT/beaqlejs>
+
+    This file and all corresponding parts of BeaqleJS are published under the GPLv3 license, <http://www.gnu.org/licenses/>    
+    -->
+
+
+    <title>BeaqleJS</title>
+    
+    <!-- load the test config file -->
+        <script src="config/expected_trend.js" type="text/javascript"></script>
+<!--         <script src="config/spaccent_hindi_accentedness.js" type="text/javascript"></script> -->
+    <!---->
+    
+    <link type="text/css" href="css/smoothness/jquery-ui-1.8.18.custom.css" rel="Stylesheet" />
+    <link type="text/css" href="css/styles.css" rel="Stylesheet" />
+
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.custom.min.js" type="text/javascript" ></script>
+    <script src="js/beaqle.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+    /* <![CDATA[ */
+        var testHandle;
+        window.onload=function() {
+
+            // Uncomment one of the following lines to choose the desired test class
+
+            testHandle = new MushraNoAudio(TestConfig);
+            // testHandle = new MushraTest(TestConfig);    // <-- MUSHRA test class
+
+            $('#Footer').prepend(testHandle.browserFeatureString() + '<br/>');
+        };
+    /* ]]> */
+    </script>
+   
+</head>
+
+<body>
+
+<div id="Wrapper">
+
+    <div id="TestTitle" class="commonBox">
+        <!-- overall title at the top 
+             DO NOT EDIT! This box is automatically filled with content!
+        -->
+        Loading...
+    </div>
+    
+    <!-- is displayed during load -->
+    <div id="LoadOverlay" class="commonBox">
+        <img src="img/ajax-loader.gif"/> &nbsp;&nbsp;&nbsp; Loading...
+    </div>
+
+    <!-- introduction before the test starts -->
+    <div id="TestIntroduction" class="commonBox">
+        
+        <!-- edit here if you want to change the welcome message  and instructions -->
+
+        <div style="text-align:left">
+            Thanks for your interest in participating in the listening test. This survey will roughly take 20 minutes. We would like to ask you some questions regarding personalities in real conversation. 
+            
+            The first experiment is to relate the personalities to conversation traits. We will give you one of five personalities and you are required to answer whether each conversation trait (e.g. # of laughs) is align with the give personality. Please check the following examples for better understanding. 
+            <ul>
+                <li>Example 1. If you think a person with personality A tends to laugh many times, you should choose “aligned” or “very aligned” for “# of laughs”.
+                <li>Example 2. If you are not sure the duration a person with personality A speaks in one turn, you should choose “neutral” for “averaged duration per turn”
+                <li>Example 3 If you think a person with personality A tends to say fewer negative remarks, you should choose “opposed” or “very opposed” for “percentages of saying something negative”
+            </ul>
+            
+            Please first read the definition of the conversation traits. Before you proceed to the next page.
+            <br>
+            <br>
+            <b>Definition of Conversation Traits</b>
+            <br />
+            <br />
+            <div id="demonat">
+                <img src="img/overlap.png" alt="demonat"  width="300">
+            </div>
+            <br />
+            <ul>
+            
+                <li><b>Turn</b>: A speaker's contribution from the start of their speech until they stop or another speaker takes over.
+                <li><b>Overlappee</b>: the speaker/response that gets overlapped.
+                <li><b>Overlapper</b>: the speaker/response that overlaps the speech.
+                <li><b>Overlap</b>: An instance where the overlappee stops speaking before the overlapper finishes speaking.
+                <li><b>Fully overlap</b>: An overlap where the overlappee continues speaking after the overlapper stops speaking.
+            </ul>
+
+            When the overlapper interrupts the overlappee and successfully takes the turn, this is termed a <b>successful interjection</b>. However, fully overlaps can result in either <b>unsuccessful interjections</b> or <b>backchannels</b>. These outcomes depend on the speaker's intention to take the turn. 
+            If no such intention exists, the event constitutes a <b>backchannel</b>. 
+            We categorize backchannels into two types: 
+            <ul>
+            <li><b>Emotive backchannels</b>: Express the listener's emotional state, such as "wow" to convey surprise.
+            <li><b>Cognitive backchannels</b>: Reflect the listener's cognitive state or thought processes like "Oh, I see" to indicate realization.
+            </ul>
+            
+            <br />
+            This is the end of definitions of the terms we will use in the survey. You can now proceed the next page. There are ways for checking your attention through the survey. If a certain number of the scores are answered unreasonably, you will not be paid. So, do not fill out the survey randomly. 
+        </div>
+        <br />
+        <br />
+                        
+        <!-- this button starts the first test -->
+        <button id="BtnStartTest" onclick="testHandle.startTests();">Start!</button>	
+        
+    </div>
+
+    <!-- final text after all tests have passed -->
+    <div id="TestEnd" class="commonBox">
+
+        <!-- edit here if you want to change the thank you message -->
+        Thank you very much!
+        <br />
+        <br />
+        
+        <!-- show some informations before submitting the results -->
+        <div id="SubmitBox">
+            <div id="SubmitError" class="error">
+                We are sorry, but the following error occured during your submission:
+                <p id="ErrorCode"></p>
+            </div>
+            <p class="submitOnline">
+                <!-- edit here if you want to change the information about online submission, e.g. add privacy policy information -->
+                Please submit the results to our server. Entering a name or email address is not mandatory
+                but it would help us to contact you if we have further questions. You can also leave a comment.
+            </p>
+            <p class="submitDownload">
+                <!-- edit here if you want to change the information about online submission, e.g. add privacy policy information -->
+                Please download and save the results. Entering a name or email address is not mandatory 
+                but it would help us to contact you if we have further questions. You can also leave a comment.
+            </p>
+            <table border=0 style="margin-left: auto;margin-right: auto;">
+            <tr><td>Name:</td><td><input id="UserName" type="text" size="40" maxlength="40" /></td></tr>
+            <tr><td>Email:</td><td><input id="UserEMail" type="text" size="40" maxlength="40" /></td></tr>
+            <tr><td></td><td><textarea id="UserComment" cols="40" rows="4">Your comment...</textarea></td></tr>
+            </table>
+            <br />
+            <button id="BtnSubmitData" class="submitOnline" onclick="testHandle.SubmitTestResults();">Submit</button>
+            <button id="BtnDownloadData" class="submitDownload" onclick="testHandle.DownloadTestResults();">Download</button>
+            <p class="submitEmail error">
+                <!-- edit here if you want to change the information about email submission, e.g. add privacy policy information -->
+                Results should be send to <span class="supervisorEmail"></span>
+            </p>
+        </div>
+        
+        <!-- the test results are displayed in this box -->
+        <div id="ResultsBox">
+        </div>
+    </div>
+
+    <div id="TableContainer" class="commonBox">
+        <!-- container for the test items and sliders 
+             DO NOT EDIT! This box is automatically filled with content!
+        -->    
+
+        <!-- heading for the single test -->
+        <div id="TestHeading">
+        </div>
+    
+    </div>
+
+    <!-- controls to go to next/previous test -->
+    <div id="TestControls" class="commonBox">
+        <button id="BtnNextTest">Next Test</>
+        <button id="BtnPrevTest">Previous Test</>
+    </div>
+
+    <!-- playback control -->
+    <div id="PlayerControls" class="commonBox">
+
+        <div id="duration">
+            <span>00:00</span>
+        </div>
+        
+        <div id="TimeLine">
+            <div id="ProgressBar"></div>
+            <div id="ABRange"></div>
+        </div>
+        
+        <div>
+            <input id="ChkLoopAudio" type="checkbox" value="Loop" /><label for="ChkLoopAudio">Loop</label>
+            <input id="ChkAutoReturn" type="checkbox" value="Auto Return" /><label for="ChkAutoReturn">Auto Return</label>
+        </div>
+        
+        <div id="Volume">
+            Volume
+            <div id="VolumeSlider"></div>
+        </div>
+        
+        <br style="clear:both"/>
+    
+    </div>
+
+    <!-- Footer -->
+    <div id="Footer">
+        This listening test has been created with <a href="https://github.com/HSU-ANT/beaqlejs" target="_blank">BeaqleJS</a> <a href="https://github.com/HSU-ANT/beaqlejs/tree/master" target="_blank">master</a>.
+    </div>
+</div>
+
+</body>
+
+</html>
