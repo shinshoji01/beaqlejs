@@ -1273,15 +1273,11 @@ MushraNoAudio.prototype.createFileMapping = function (TestIdx) {
     var NumFiles = $.map(this.TestConfig.Testsets[TestIdx].Files, function(n, i) { return i; }).length;
     var fileMapping = new Array(NumFiles);    
 
+    let count = 0;
     $.each(this.TestConfig.Testsets[TestIdx].Files, function(index, value) { 
 
-        do {
-            var RandFileNumber = Math.floor(Math.random()*(NumFiles));
-            if (RandFileNumber>NumFiles-1) RandFileNumber = NumFiles-1;
-        } while (typeof fileMapping[RandFileNumber] !== 'undefined');
-
-        if (RandFileNumber<0) alert(fileMapping);
-        fileMapping[RandFileNumber] = index;
+        fileMapping[count] = index;
+        count ++;
     });
     
     this.TestState.FileMappings[TestIdx] = fileMapping;
@@ -1503,16 +1499,13 @@ MushraLabel.prototype.constructor = MushraLabel;
 MushraLabel.prototype.createFileMapping = function (TestIdx) {
     var NumFiles = $.map(this.TestConfig.Testsets[TestIdx].Files, function(n, i) { return i; }).length;
     var fileMapping = new Array(NumFiles);    
+    // var fileMapping = new [...Array(NumFiles).keys()];
 
+    let count = 0;
     $.each(this.TestConfig.Testsets[TestIdx].Files, function(index, value) { 
 
-        do {
-            var RandFileNumber = Math.floor(Math.random()*(NumFiles));
-            if (RandFileNumber>NumFiles-1) RandFileNumber = NumFiles-1;
-        } while (typeof fileMapping[RandFileNumber] !== 'undefined');
-
-        if (RandFileNumber<0) alert(fileMapping);
-        fileMapping[RandFileNumber] = index;
+        fileMapping[count] = index;
+        count ++;
     });
     
     this.TestState.FileMappings[TestIdx] = fileMapping;
