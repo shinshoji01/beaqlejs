@@ -1,0 +1,81 @@
+,,mean,interval
+Openness,Number of Turns,-30.0,381.1861420929629
+Openness,Talking Time per Turn,28.0,355.7737326200986
+Openness,Frequency of Laughter,0.0,
+Openness,Frequency of Emotive Backchannel,0.0,
+Openness,Frequency of Cognitive Backchannel,48.0,609.8978273487405
+Openness,Frequency of Interjections,-29.0,368.47993735653074
+Openness,Positive Sentiment,0.0,
+Openness,Neutral Sentiment,31.0,393.8923468293949
+Openness,Negative Sentiment,0.0,
+Openness,Emotional Statement (Anger),0.0,
+Openness,Emotional Statement (Disgust),0.0,
+Openness,Emotional Statement (Fear),0.0,
+Openness,Emotional Statement (Joy),0.0,
+Openness,Emotional Statement (Neutral),32.0,406.59855156582705
+Openness,Emotional Statement (Sadness),0.0,
+Openness,Emotional Statement (Surprise),0.0,
+Conscientiousness,Number of Turns,-33.0,419.30475630225914
+Conscientiousness,Talking Time per Turn,33.0,419.30475630225914
+Conscientiousness,Frequency of Laughter,12.0,152.47445683718513
+Conscientiousness,Frequency of Emotive Backchannel,0.0,
+Conscientiousness,Frequency of Cognitive Backchannel,30.0,381.1861420929629
+Conscientiousness,Frequency of Interjections,0.0,
+Conscientiousness,Positive Sentiment,0.0,
+Conscientiousness,Neutral Sentiment,0.0,
+Conscientiousness,Negative Sentiment,0.0,
+Conscientiousness,Emotional Statement (Anger),0.0,
+Conscientiousness,Emotional Statement (Disgust),0.0,
+Conscientiousness,Emotional Statement (Fear),0.0,
+Conscientiousness,Emotional Statement (Joy),0.0,
+Conscientiousness,Emotional Statement (Neutral),0.0,
+Conscientiousness,Emotional Statement (Sadness),0.0,
+Conscientiousness,Emotional Statement (Surprise),0.0,
+Extraversion,Number of Turns,50.0,635.3102368216048
+Extraversion,Talking Time per Turn,-6.0,1194.3832452246168
+Extraversion,Frequency of Laughter,65.0,165.18066157361721
+Extraversion,Frequency of Emotive Backchannel,42.0,533.6605989301479
+Extraversion,Frequency of Cognitive Backchannel,22.0,279.53650420150603
+Extraversion,Frequency of Interjections,30.0,381.1861420929629
+Extraversion,Positive Sentiment,33.0,419.30475630225914
+Extraversion,Neutral Sentiment,0.0,
+Extraversion,Negative Sentiment,-32.0,406.59855156582705
+Extraversion,Emotional Statement (Anger),48.0,203.29927578291353
+Extraversion,Emotional Statement (Disgust),0.0,
+Extraversion,Emotional Statement (Fear),-24.0,304.94891367437026
+Extraversion,Emotional Statement (Joy),32.0,406.59855156582705
+Extraversion,Emotional Statement (Neutral),0.0,
+Extraversion,Emotional Statement (Sadness),0.0,
+Extraversion,Emotional Statement (Surprise),34.0,432.01096103869116
+Agreeableness,Number of Turns,-26.0,940.2591504959751
+Agreeableness,Talking Time per Turn,-29.0,368.47993735653074
+Agreeableness,Frequency of Laughter,50.0,635.3102368216048
+Agreeableness,Frequency of Emotive Backchannel,9.0,1054.6149931238638
+Agreeableness,Frequency of Cognitive Backchannel,50.0,635.3102368216048
+Agreeableness,Frequency of Interjections,-49.0,622.6040320851727
+Agreeableness,Positive Sentiment,36.0,457.42337051155545
+Agreeableness,Neutral Sentiment,0.0,
+Agreeableness,Negative Sentiment,-6.0,914.8467410231109
+Agreeableness,Emotional Statement (Anger),-66.0,50.82481894572838
+Agreeableness,Emotional Statement (Disgust),-35.0,444.71716577512336
+Agreeableness,Emotional Statement (Fear),-45.0,571.7792131394443
+Agreeableness,Emotional Statement (Joy),38.0,482.83577998441956
+Agreeableness,Emotional Statement (Neutral),-19.0,241.41788999220978
+Agreeableness,Emotional Statement (Sadness),29.0,368.47993735653074
+Agreeableness,Emotional Statement (Surprise),0.0,
+Neuroticism,Number of Turns,-47.0,597.1916226123084
+Neuroticism,Talking Time per Turn,37.0,470.12957524798753
+Neuroticism,Frequency of Laughter,-78.0,101.64963789145676
+Neuroticism,Frequency of Emotive Backchannel,56.0,304.94891367437026
+Neuroticism,Frequency of Cognitive Backchannel,0.0,
+Neuroticism,Frequency of Interjections,0.0,
+Neuroticism,Positive Sentiment,-39.0,495.5419847208516
+Neuroticism,Neutral Sentiment,-32.0,406.59855156582705
+Neuroticism,Negative Sentiment,36.0,457.42337051155545
+Neuroticism,Emotional Statement (Anger),37.0,470.12957524798753
+Neuroticism,Emotional Statement (Disgust),38.0,482.83577998441956
+Neuroticism,Emotional Statement (Fear),39.0,495.5419847208516
+Neuroticism,Emotional Statement (Joy),-37.0,470.12957524798753
+Neuroticism,Emotional Statement (Neutral),-57.0,139.76825210075302
+Neuroticism,Emotional Statement (Sadness),63.0,165.18066157361721
+Neuroticism,Emotional Statement (Surprise),0.0,

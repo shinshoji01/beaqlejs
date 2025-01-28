@@ -4,7 +4,7 @@ var TestConfig = {
   "RateScaleBgPng": "img/scale_abs_background.png",
   "RateMinValue": 0,
   "RateMaxValue": 100,
-  "RateDefaultValue":0,
+  "RateDefaultValue":50,
   "ShowFileIDs": false,
   "ShowResults": false,
   "LoopByDefault": false,

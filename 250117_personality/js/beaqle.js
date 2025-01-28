@@ -1664,9 +1664,9 @@ MushraLabel.prototype.createTestDOM = function (TestIdx) {
 
             row[i]  = tab.insertRow(-1);
             cell[0] = row[i].insertCell(-1);
-            cell[1] = row[i].insertCell(-1);
-            cell[1].innerHTML = "<span class='testItem'>" + fileID + "</span>";
-            cell[1].colSpan = 2
+            // cell[1] = row[i].insertCell(-1);
+            cell[0].innerHTML = "<span class='testItem'>" + fileID + "</span>";
+            cell[0].colSpan = 3
             // cell[1] = row[i].insertCell(-1);
             // cell[1].innerHTML =  '<button id="play'+relID+'Btn" class="playButton" rel="'+relID+'">Play</button>';
             // cell[2] = row[i].insertCell(-1);

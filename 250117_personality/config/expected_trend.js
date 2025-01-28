@@ -4,7 +4,7 @@ var TestConfig = {
       "RateScaleBgPng": "img/scale_abs_background.png",
       "RateMinValue": 0,
       "RateMaxValue": 100,
-      "RateDefaultValue":0,
+      "RateDefaultValue":50,
       "ShowFileIDs": false,
       "ShowResults": false,
       "LoopByDefault": false,
@@ -113,7 +113,7 @@ var TestConfig = {
   {
     "Name": "Target Personality: Neuroticism",
     "TestID": "Neuroticism",
-    "Text": "<b>Target Personality</b>: Neuroticism<br><b>Explanation to 'Neuroticism'</b>: emotioonal instability, irritability, anxiety, self-doubt, depression<br><b>Opposite Term</b>: 'Emotion stability'",
+    "Text": "<b>Target Personality</b>: Neuroticism<br><b>Explanation to 'Neuroticism'</b>: emotional instability, irritability, anxiety, self-doubt, depression<br><b>Opposite Term</b>: 'Emotion stability'",
     "Files": {
       "<b>Number of Turns: </b>The number of turns, defined as text responses separated by 700 ms, excluding backchannels and unsuccessful interjections": "./audio/sample.wav",
       "<b>Talking Time per Turn: </b>The average duration of speech per turn": "./audio/sample.wav",
