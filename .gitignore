@@ -1,6 +1,8 @@
 *~
 audio/
 audio/*
+audio.zip
 .ipynb_checkpoints/
 .DS_Store
 results/
+Untitled.ipynb

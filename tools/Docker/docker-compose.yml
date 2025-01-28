@@ -6,4 +6,4 @@ services:
     ports:
       - "3333:80"
     volumes:
-      - ../../240815_spaccent/:/var/www/html
+      - ../../250117_personality/:/var/www/html

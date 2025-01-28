@@ -21,7 +21,7 @@ var TestConfig = {
   {
     "Name": "Target Personality: Openness",
     "TestID": "Openness",
-    "Text": "<b>Target Personality</b>: Openness<br><b>Explanation to 'Openness'</b>: intellectual, imaginative, independent-minded<br><b>Opposite Term</b>: 'Closeness'",
+    "Text": "Please relate the personality <b>Openness</b> to conversation traits. You are required to answer whether each conversation trait (e.g. Frequency of Laughter) is aligned with <b>Openness</b>.<br><br><b>Target Personality</b>: Openness<br><b>Explanation to 'Openness'</b>: intellectual, imaginative, independent-minded<br><b>Opposite Term</b>: 'Closeness'",
     "Files": {
       "<b>Number of Turns: </b>The number of turns, defined as text responses separated by 700 ms, excluding backchannels and unsuccessful interjections": "./audio/sample.wav",
       "<b>Talking Time per Turn: </b>The average duration of speech per turn": "./audio/sample.wav",
@@ -44,7 +44,7 @@ var TestConfig = {
   {
     "Name": "Target Personality: Conscientiousness",
     "TestID": "Conscientiousness",
-    "Text": "<b>Target Personality</b>: Conscientiousness<br><b>Explanation to 'Conscientiousness'</b>: orderly, responsible, dependable<br><b>Opposite Term</b>: 'Lack of direction'",
+    "Text": "Please relate the personality <b>Conscientiousness</b> to conversation traits. You are required to answer whether each conversation trait (e.g. Frequency of Laughter) is aligned with <b>Conscientiousness</b>.<br><br><b>Target Personality</b>: Conscientiousness<br><b>Explanation to 'Conscientiousness'</b>: orderly, responsible, dependable<br><b>Opposite Term</b>: 'Lack of direction'",
     "Files": {
       "<b>Number of Turns: </b>The number of turns, defined as text responses separated by 700 ms, excluding backchannels and unsuccessful interjections": "./audio/sample.wav",
       "<b>Talking Time per Turn: </b>The average duration of speech per turn": "./audio/sample.wav",
@@ -67,7 +67,7 @@ var TestConfig = {
   {
     "Name": "Target Personality: Extraversion",
     "TestID": "Extraversion",
-    "Text": "<b>Target Personality</b>: Extraversion<br><b>Explanation to 'Extraversion'</b>: talkative, assertive, energetic<br><b>Opposite Term</b>: 'Introversion'",
+    "Text": "Please relate the personality <b>Extraversion</b> to conversation traits. You are required to answer whether each conversation trait (e.g. Frequency of Laughter) is aligned with <b>Extraversion</b>.<br><br><b>Target Personality</b>: Extraversion<br><b>Explanation to 'Extraversion'</b>: talkative, assertive, energetic<br><b>Opposite Term</b>: 'Introversion'",
     "Files": {
       "<b>Number of Turns: </b>The number of turns, defined as text responses separated by 700 ms, excluding backchannels and unsuccessful interjections": "./audio/sample.wav",
       "<b>Talking Time per Turn: </b>The average duration of speech per turn": "./audio/sample.wav",
@@ -90,7 +90,7 @@ var TestConfig = {
   {
     "Name": "Target Personality: Agreeableness",
     "TestID": "Agreeableness",
-    "Text": "<b>Target Personality</b>: Agreeableness<br><b>Explanation to 'Agreeableness'</b>: good-natured, cooperative, trustful<br><b>Opposite Term</b>: 'Antagonism'",
+    "Text": "Please relate the personality <b>Agreeableness</b> to conversation traits. You are required to answer whether each conversation trait (e.g. Frequency of Laughter) is aligned with <b>Agreeableness</b>.<br><br><b>Target Personality</b>: Agreeableness<br><b>Explanation to 'Agreeableness'</b>: good-natured, cooperative, trustful<br><b>Opposite Term</b>: 'Antagonism'",
     "Files": {
       "<b>Number of Turns: </b>The number of turns, defined as text responses separated by 700 ms, excluding backchannels and unsuccessful interjections": "./audio/sample.wav",
       "<b>Talking Time per Turn: </b>The average duration of speech per turn": "./audio/sample.wav",
@@ -113,7 +113,7 @@ var TestConfig = {
   {
     "Name": "Target Personality: Neuroticism",
     "TestID": "Neuroticism",
-    "Text": "<b>Target Personality</b>: Neuroticism<br><b>Explanation to 'Neuroticism'</b>: emotional instability, irritability, anxiety, self-doubt, depression<br><b>Opposite Term</b>: 'Emotion stability'",
+    "Text": "Please relate the personality <b>Neuroticism</b> to conversation traits. You are required to answer whether each conversation trait (e.g. Frequency of Laughter) is aligned with <b>Neuroticism</b>.<br><br><b>Target Personality</b>: Neuroticism<br><b>Explanation to 'Neuroticism'</b>: emotional instability, irritability, anxiety, self-doubt, depression<br><b>Opposite Term</b>: 'Emotion stability'",
     "Files": {
       "<b>Number of Turns: </b>The number of turns, defined as text responses separated by 700 ms, excluding backchannels and unsuccessful interjections": "./audio/sample.wav",
       "<b>Talking Time per Turn: </b>The average duration of speech per turn": "./audio/sample.wav",
