@@ -1617,7 +1617,7 @@ MushraLabel.prototype.createTestDOM = function (TestIdx) {
         fileID = "Left";
         row  = tab.insertRow(-1);
         cell[0] = row.insertCell(-1);
-        cell[0].innerHTML = "<span class='testItem'>Left Speaker</span>";
+        cell[0].innerHTML = "<span class='testItem'>Only Left Speaker</span>";
         cell[1] = row.insertCell(-1);
         cell[1].innerHTML =  '<button id="play'+fileID+'Btn" class="playButton" rel="'+fileID+'">Play</button>';
         cell[2] = row.insertCell(-1);
@@ -1630,7 +1630,7 @@ MushraLabel.prototype.createTestDOM = function (TestIdx) {
         fileID = "Right";
         row  = tab.insertRow(-1);
         cell[0] = row.insertCell(-1);
-        cell[0].innerHTML = "<span class='testItem'>Right Speaker</span>";
+        cell[0].innerHTML = "<span class='testItem'>Only Right Speaker</span>";
         cell[1] = row.insertCell(-1);
         cell[1].innerHTML =  '<button id="play'+fileID+'Btn" class="playButton" rel="'+fileID+'">Play</button>';
         cell[2] = row.insertCell(-1);
@@ -1665,7 +1665,8 @@ MushraLabel.prototype.createTestDOM = function (TestIdx) {
             row[i]  = tab.insertRow(-1);
             cell[0] = row[i].insertCell(-1);
             // cell[1] = row[i].insertCell(-1);
-            cell[0].innerHTML = "<span class='testItem'>" + fileID + "</span>";
+            // cell[0].innerHTML = "<span class='testItem'>" + fileID + "</span>";
+            cell[0].innerHTML = "<p align='left'>" + fileID + "</p>";
             cell[0].colSpan = 3
             // cell[1] = row[i].insertCell(-1);
             // cell[1].innerHTML =  '<button id="play'+relID+'Btn" class="playButton" rel="'+relID+'">Play</button>';
