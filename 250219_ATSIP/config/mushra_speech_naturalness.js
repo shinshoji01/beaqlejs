@@ -9,11 +9,11 @@ var TestConfig = {
   "ShowResults": false,
   "LoopByDefault": false,
   "EnableABLoop": true,
-  "EnableOnlineSubmission": true,
+  "EnableOnlineSubmission": false,
   "BeaqleServiceURL": "/web_service/beaqleJS_Service.php",
   "SupervisorContact": "shoinoue@link.cuhk.edu.cn",
   "RandomizeTestOrder": true,
-  "MaxTestsPerRun": 15,
+  "MaxTestsPerRun": 3,
   "RequireMaxRating": false,
   "AudioRoot": "",
   "Testsets":
